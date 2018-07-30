@@ -65,6 +65,7 @@ class ChiSiamo extends StatelessWidget {
                                               "pulizie civili ed industriali, manutenzione del verde, disinfestazione e derattizzazione, manutenzione idraulica ed elettrica, tinteggiatura, lavori di cartongesso e piccoli lavori edili.",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
+                                              color: Colors.black54
                                           )),
                                       TextSpan(
                                         text:
@@ -100,6 +101,7 @@ class ChiSiamo extends StatelessWidget {
                                           text: "personale qualificato ",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
+                                              color: Colors.black54
                                           )),
                                       TextSpan(
                                         text:
@@ -109,6 +111,7 @@ class ChiSiamo extends StatelessWidget {
                                           text: "Facility Management.",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
+                                              color: Colors.black54
                                           ))
                                     ],
                                   ),
@@ -132,11 +135,22 @@ class ChiSiamo extends StatelessWidget {
         ]),
         Container(
             alignment: Alignment.center,
-            color: Colors.blue[900],
+            color: Colors.grey[900],
             padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 30.0),
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
+                  Container(
+                      padding: EdgeInsets.symmetric(vertical: 10.0),
+                      child: GestureDetector(
+                          onTap: () {
+                            contactUs('http://www.facebook.com');
+                          },
+                          child:ImageIcon(
+                        AssetImage('asset/images/facebook_logo_button.png'),
+                        color: Colors.white,
+                      ))),
                   Container(
                       alignment: Alignment.center,
                       padding: EdgeInsets.symmetric(vertical: 5.0),

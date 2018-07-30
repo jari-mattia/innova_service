@@ -19,16 +19,17 @@ class _MyHomePageState extends State<MyHomePage> {
             Image.asset('asset/images/home_bg.png', fit: BoxFit.cover),
             Card(
               color: Color(0xCCFFFFFF),
-              margin: EdgeInsets.symmetric(vertical: 30.0, horizontal: 15.0),
+              margin: EdgeInsets.symmetric(vertical: 25.0, horizontal: 15.0),
               child: Container(
-                padding: EdgeInsets.symmetric(vertical: 60.0, horizontal: 40.0),
+                padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 40.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      padding: EdgeInsets.symmetric(horizontal: 30.0),
                       child: Image.asset('asset/images/logo.png'),
+
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(
@@ -62,6 +63,23 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Text("FAI UN PREVENTIVO"),
                       textColor: Colors.white,
                     ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children : <Widget>[
+                        Text.rich(TextSpan(style: TextStyle(fontSize: 12.0),text:"INVIACI")),
+                        Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 10.0),
+                            child: FloatingActionButton(
+                              onPressed: getImage,
+                              child: Icon(
+                                Icons.camera_alt,
+                                color:Colors.white,
+                              ),
+                              backgroundColor: Colors.redAccent,
+                            )),
+                        Text.rich(TextSpan(style: TextStyle(fontSize: 12.0),text:"UNA FOTO"))
+                      ],
+                    )
                   ],
                 ),
               ),
@@ -76,14 +94,14 @@ class _MyHomePageState extends State<MyHomePage> {
             Image.asset('asset/images/home_bg.png', fit: BoxFit.cover),
             Card(
               color: Color(0xCCFFFFFF),
-              margin: EdgeInsets.symmetric(vertical: 30.0, horizontal: 15.0),
+              margin: EdgeInsets.symmetric(vertical: 25.0, horizontal: 15.0),
               child: Container(
-                padding: EdgeInsets.symmetric(vertical: 60.0, horizontal: 40.0),
+                padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 40.0),
                 child: Row(children: <Widget>[
                   Expanded(
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           Padding(
                             padding: EdgeInsets.symmetric(horizontal: 40.0),
@@ -131,6 +149,22 @@ class _MyHomePageState extends State<MyHomePage> {
                             },
                             child: Text("FAI UN PREVENTIVO"),
                             textColor: Colors.white,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children : <Widget>[
+                              Text.rich(TextSpan(style: TextStyle(fontSize: 12.0),text:"INVIACI UNA FOTO")),
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 10.0),
+                              child: FloatingActionButton(
+                                onPressed: getImage,
+                                child: Icon(
+                                  Icons.camera_alt,
+                                  color:Colors.white,
+                                ),
+                                backgroundColor: Colors.redAccent,
+                              )),
+                            ],
                           ),
                         ],
                       ),
