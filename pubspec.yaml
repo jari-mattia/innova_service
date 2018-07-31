@@ -54,6 +54,11 @@ flutter:
     - asset/images/page_4_bg.jpg
     - asset/images/page_5_av.png
     - asset/images/page_5_bg.png
+    - asset/images/facebook.png
+    - asset/images/letter.png
+    - asset/images/phone.png
+    - asset/images/whatsapp.png
+    - asset/images/worldwide.png
     - asset/images/facebook_logo_button.png
 
 
