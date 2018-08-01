@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:innova_service/chi_siamo.dart';
+import 'package:innova_service/contatti.dart';
 import 'package:innova_service/services_page_view.dart';
 
 import 'home_page.dart';
@@ -17,6 +18,7 @@ class _MyAppState extends State<MyApp> {
   MyHomePage home;
   MyServicesPageView services;
   ChiSiamo chiSiamo;
+  Contatti contatti;
   List<Widget> pages;
   Widget currentPage;
 
@@ -25,8 +27,9 @@ class _MyAppState extends State<MyApp> {
     home = MyHomePage();
     services = MyServicesPageView();
     chiSiamo = ChiSiamo();
+    contatti = Contatti();
 
-    pages = [home, services, chiSiamo];
+    pages = [home, services, chiSiamo, contatti];
 
     currentPage = home;
     super.initState();
