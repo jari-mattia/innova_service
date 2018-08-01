@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:innova_service/intervento.dart';
+import 'package:innova_service/preventivo.dart';
 
 import 'services_page_view.dart';
 import 'bottom_modal_sheet.dart';
@@ -48,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => MyServicesPageView()),
+                              builder: (context) => Intervento()),
                         );
                       },
                       child: Text("RICHIEDI INTERVENTO"),
@@ -58,7 +60,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: EdgeInsets.symmetric(vertical: 20.0),
                       color: Theme.of(context).accentColor,
                       onPressed: () {
-                        showHomeModalSheet(context);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Preventivo()),
+                        );
                       },
                       child: Text("FAI UN PREVENTIVO"),
                       textColor: Colors.white,

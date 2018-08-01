@@ -92,14 +92,14 @@ class _ContattiState extends State<Contatti> {
         return
             Container(
                 color: Colors.blue,
-                child: Card(
+                child: ListView(
+
+            children: <Widget>[Card(
                     margin: EdgeInsets.only(
                         bottom: 10.0, left: 10.0, right: 10.0, top: 30.0),
-                  child : ListView(
-
-                      children: <Widget>[
+                  child :
                         Container(
-                      padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
+                      padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 30.0),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
@@ -171,7 +171,7 @@ class _ContattiState extends State<Contatti> {
 
                         ],
                       ),
-                    )])));
+                    ))]));
       }});
   }
 }
